@@ -1,0 +1,35 @@
+*{font-family:'Roboto',sans-serif;box-sizing:border-box;font-size:15px}
+input {outline: none;}
+body{margin:0;display:flex;align-items:center;justify-content:center;background-color:#f5f5f5}
+.content{padding:2rem 3rem;transition:.2s}
+.d_{position:relative;margin:2rem 0}
+h1{font-size:3.5rem;margin:1rem 0 4rem;text-align:center}
+footer {text-align: center;}
+.cr a {text-decoration: none;color: rgb(0 0 0);font-weight: 600;}
+#toFrame {margin: auto;max-width: 30rem;position: relative;}
+#toFrame img {width: 100%;display: block;}
+.bd{position:absolute;width: 1.5rem;height: 1.5rem;}
+.bd[p="0"]{top: -1.5rem;left: -1.5rem;}
+.bd[p="1"]{top: -1.5rem;right: -1.5rem;}
+.bd[p="2"]{bottom: -1.5rem;left: -1.5rem;}
+.bd[p="3"]{bottom: -1.5rem;right: -1.5rem;}
+.container {overflow: hidden;border: .5rem solid rgb(255 165 0);background-color: rgb(231 150 0);}
+.bd > input[type='text']{position:absolute;width:3rem;height:1.5rem;background:#fff;border: .03rem solid rgb(229 229 229);}
+.bd[p="0"] > input[type='text'],.bd[p="2"] > input[type='text']{right: 0;}
+.bd[p="1"] > input[type='text'],.bd[p="3"] > input[type='text']{left: 0;}
+#result{width:100%!important;display:block;margin:5rem 0!important;resize:none;outline:none;border-color: rgb(233 233 233);padding:1rem;height:12rem!important;}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    h1{font-size:3rem;margin-bottom:3rem}
+    .content{padding:2rem}
+    form{width:90%}
+    #toFrame {max-width: calc(100% - 7rem);}
+}
